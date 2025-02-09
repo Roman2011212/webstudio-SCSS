@@ -1,0 +1,130 @@
+:root {
+  --color-text-title: #212121;
+
+  --color-bg-primary: #2f303a;
+
+  --color-text-add: rgba(255, 255, 255, 0.6);
+
+  --color-header-border: #ececec;
+
+  --color-team-section: #f5f4fa;
+
+  --color-second-logo: #2196f3;
+
+  --color-first-logo: #000000;
+
+  --color-text-main: #757575;
+
+  --color-header-bord: #ffffff;
+
+  --font-primary: "Roboto", serif;
+  --font-secondary: "Raleway", serif;
+}
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-main);
+}
+
+.header-logo {
+  font-family: var(--font-secondary);
+  font-size: 26;
+}
+.logo-black {
+  font-family: var(--font-secondary);
+  font-size: 26;
+}
+.nav-link:hover {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-second-logo);
+}
+.address:hover {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-second-logo);
+}
+.hero-title {
+  font-family: var(--font-primary);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+}
+.hero-button {
+  font-family: var(--font-primary);
+  background-color: var(--color-second-logo);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+.advantages-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.advantages-text {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.work-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+.teammate-name {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16;
+  line-height: 19;
+}
+.teammete-role {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16;
+  line-height: 19;
+}
+.logo {
+  font-family: var(--font-secondary);
+  font-size: 26;
+}
+.logo-white {
+  font-family: var(--font-secondary);
+  font-size: 26;
+}
+.footer-contacts {
+  font-family: var(--font-primary);
+  font-size: 14;
+  line-height: 24;
+  font-weight: 400;
+}
+.footer-contacts-link {
+  font-family: var(--font-primary);
+  font-size: 14;
+  line-height: 24;
+  font-weight: 400;
+}
+.filters-button:hover {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24;
+}
+.Product-name {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 18;
+  line-height: 36;
+}
+.product-category {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16;
+  line-height: 30;
+}
