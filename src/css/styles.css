@@ -30,101 +30,120 @@ body {
 
 .header-logo {
   font-family: var(--font-secondary);
-  font-size: 26;
+  font-size: 26px;
+  color: var(--color-second-logo);
 }
 .logo-black {
   font-family: var(--font-secondary);
-  font-size: 26;
+  color: var(--color-first-logo);
+}
+.nav-link {
+  font-weight: 500;
+  color: var(--color-text-title);
+  letter-spacing: 0.02em;
 }
 .nav-link:hover {
-  font-weight: 500;
-  font-size: 14px;
   color: var(--color-second-logo);
 }
 .address:hover {
-  font-family: var(--font-primary);
-  font-weight: 500;
-  font-size: 14px;
   color: var(--color-second-logo);
 }
+.address {
+  font-weight: 500;
+  color: var(--color-text-title);
+  letter-spacing: 0.02em;
+}
 .hero-title {
-  font-family: var(--font-primary);
+  color: var(--color-header-bord);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.3;
+  background-color: var(--color-bg-primary);
 }
 .hero-button {
-  font-family: var(--font-primary);
   background-color: var(--color-second-logo);
+  color: var(--color-header-bord);
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
+  border: 0;
 }
 .advantages-title {
-  font-family: var(--font-primary);
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  color: var(--color-first-logo);
 }
 .advantages-text {
-  font-family: var(--font-primary);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  color: var(--color-text-main);
 }
 .work-title {
-  font-family: var(--font-primary);
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
+  color: var(--color-text-title);
+}
+.team-title {
+  color: var(--color-text-title);
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
 }
 .teammate-name {
-  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 16;
-  line-height: 19;
+  line-height: 1.18;
+  color: var(--color-text-title);
 }
 .teammete-role {
-  font-family: var(--font-primary);
   font-weight: 400;
   font-size: 16;
-  line-height: 19;
+  line-height: 1.18;
 }
 .logo {
   font-family: var(--font-secondary);
-  font-size: 26;
+  font-size: 26px;
+  color: var(--color-second-logo);
+  line-height: 1.19;
+  font-weight: 700;
+  background-color: var(--color-bg-primary);
 }
 .logo-white {
+  line-height: 1.19;
+  font-weight: 700;
   font-family: var(--font-secondary);
-  font-size: 26;
+  color: var(--color-header-bord);
+  font-size: 26px;
+  background-color: var(--color-bg-primary);
 }
 .footer-contacts {
-  font-family: var(--font-primary);
-  font-size: 14;
-  line-height: 24;
-  font-weight: 400;
+  color: var(--color-header-bord);
+  background-color: var(--color-bg-primary);
 }
 .footer-contacts-link {
-  font-family: var(--font-primary);
-  font-size: 14;
-  line-height: 24;
-  font-weight: 400;
+  background-color: var(--color-bg-primary);
+  color: var(--color-header-bord);
 }
 .filters-button:hover {
-  font-family: var(--font-primary);
+  background-color: var(--color-second-logo);
+  color: var(--color-header-bord);
   font-weight: 500;
   font-size: 16px;
-  line-height: 24;
+  line-height: 1.6;
+  border: 0;
 }
 .Product-name {
-  font-family: var(--font-primary);
   font-weight: 700;
   font-size: 18;
-  line-height: 36;
+  line-height: 2;
+  color: var(--color-text-title);
 }
 .product-category {
-  font-family: var(--font-primary);
-  font-weight: 400;
   font-size: 16;
-  line-height: 30;
+  line-height: 1.8;
+  color: var(--color-text-main);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
 }
