@@ -124,11 +124,11 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--color-bg-primary);
-  background-image: url(../img/hero/Img.jpg);
+  background-image: url(../img/hero/hero\ img.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 27px 0 rgba(0, 0, 0, 0.5);
 }
 .hero-title {
   color: var(--color-header-bord);
@@ -149,7 +149,7 @@ img {
   font-size: 16px;
   line-height: 1.8;
   border: 0;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .advantages-list {
@@ -191,10 +191,13 @@ img {
 .team-list {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 .team-item {
+  display: flex;
   background-color: var(--color-header-bord);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  flex-basis: 25%;
 }
 .team-title {
   color: var(--color-text-title);
@@ -246,6 +249,7 @@ img {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--color-second-logo);
+  padding-bottom: 20px;
 }
 .logo-white {
   line-height: 1.19;
@@ -253,6 +257,7 @@ img {
   font-family: var(--font-secondary);
   color: var(--color-header-bord);
   font-size: 26px;
+  padding-bottom: 20px;
 }
 .footer-contacts {
   font-family: "Roboto", sans-serif;
@@ -261,6 +266,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 9px;
 }
 .footer-contacts-link {
   color: var(--color-header-bord);
@@ -277,7 +283,7 @@ img {
   font-size: 16px;
   line-height: 1.6;
   border: 0;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 .filters-list {
   display: flex;
@@ -288,7 +294,9 @@ img {
 }
 .portfolio-item {
   background-color: var(--color-header-bord);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.portfolio-item:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 .portfolio-list {
   display: flex;
