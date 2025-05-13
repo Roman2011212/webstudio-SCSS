@@ -204,7 +204,7 @@ img {
 .team-item {
   display: flex;
   background-color: var(--color-header-bord);
-  flex-basis: 25%;
+  flex-basis: calc((100% - 90px) / 4);
   border-radius: 4px;
 }
 .team-title {
@@ -330,11 +330,8 @@ img {
   align-items: center;
   border-radius: 4px;
   padding-top: 94px;
-  flex-basis: calc(100% / 3);
 }
-.portfolio-item {
-  background-color: var(--color-header-bord);
-}
+
 .product:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -345,6 +342,10 @@ img {
   gap: 30px;
   padding-top: 50px;
   padding-bottom: 94px;
+}
+.portfolio-item {
+  background-color: var(--color-header-bord);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .product-name {
   font-weight: 700;
