@@ -95,6 +95,7 @@ img {
   display: flex;
   gap: 50px;
   flex-direction: row;
+  gap: 10px;
 }
 .nav-link {
   font-weight: 500;
@@ -103,15 +104,29 @@ img {
   flex-direction: row;
 }
 .nav-link:hover {
-  color: var(--color-second-logo);
+  fill: var(--color-second-logo);
 }
-.address:hover {
-  color: var(--color-second-logo);
+.header-contacts-container {
+  display: flex;
+
+  align-items: center;
 }
+.header-contacts-icon {
+  fill: var(--color-text-title);
+  width: 16px;
+  height: 13px;
+}
+
 .address {
   font-weight: 500;
   color: var(--color-text-title);
   letter-spacing: 0.02em;
+}
+.address:hover {
+  color: var(--color-second-logo);
+}
+.address:hover .header-contacts-icon {
+  fill: var(--color-second-logo);
 }
 .hero-container {
   display: flex;
@@ -238,7 +253,94 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 16px;
+}
+.team-social-networks-container {
+  display: flex;
+  flex-basis: calc((100% - 36px) / 4);
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 30px;
+}
+.team-social-networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #2195f300;
+  border-radius: 54px;
+}
+.team-social-networks-link:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: #ffffff;
+  background-color: #2195f3;
+  border-radius: 54px;
+}
+.team-social-networks-link:hover .team-social-networks {
+  fill: #ffffff;
+  background-color: #2195f3;
+}
+.team-social-networks {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.team-social-networks:hover {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.brands-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-text-title);
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.brands-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+.brands-icon {
+  width: 106px;
+  height: 60px;
+}
+.brands-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  flex-basis: calc((100% - 150px) / 6);
+}
+.brands-item:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  flex-basis: calc((100% - 150px) / 6);
+}
+.brands-item:hover .brands-icon {
+  fill: var(--color-second-logo);
 }
 .footer {
   padding-top: 60px;
@@ -252,9 +354,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 70px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -331,7 +434,62 @@ img {
   border-radius: 4px;
   padding-top: 94px;
 }
+.footer-join {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-header-bord);
+}
+.footer-social-networks-container {
+  display: flex;
+  flex-basis: calc((100% - 36px) / 4);
+  gap: 12px;
 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer-join {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-header-bord);
+}
+.footer-social-networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff10;
+  border-radius: 54px;
+}
+.footer-social-networks-link:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: #ffffff;
+  background-color: #2195f3;
+  border-radius: 54px;
+}
+.footer-social-networks-link:hover .team-social-networks {
+  fill: #ffffff;
+  background-color: #2195f3;
+}
+.footer-social-networks {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.footer-social-networks:hover {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
 .product:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
