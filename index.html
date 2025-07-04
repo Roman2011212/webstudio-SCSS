@@ -69,7 +69,53 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button class="hero-button btn-open" data-modal-open>
+            Замовити послугу
+          </button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="btn-close" data-modal-close>Закрити</button>
+              <h2>Це модальне вікно</h2>
+
+              <form>
+                <div class="form-field">
+                  <label for="username">ім'я</label>
+                  <input
+                    class="hero-input"
+                    min="3"
+                    max="10"
+                    name="user_name"
+                    id="username"
+                    required
+                    type="text"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="phone_number">телефон</label>
+                  <input
+                    class="hero-input"
+                    required
+                    id="phone_number"
+                    name="phone_number"
+                    type="tel"
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="email">пошта</label>
+                  <input
+                    class="hero-input"
+                    required
+                    id="email"
+                    name="email"
+                    type="email"
+                  />
+                </div>
+                <button class="modal-buton" type="submit">Відправити</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -385,7 +431,13 @@
             </svg>
           </a>
         </div>
+
+        <label for="">
+          <input type="email" />
+          <button type="submit"></button>
+        </label>
       </div>
     </footer>
   </body>
+  <script type="module" src="./src/js/index.js"></script>
 </html>
