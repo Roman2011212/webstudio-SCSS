@@ -716,7 +716,7 @@ input[type="checkbox"] {
 .project-overlay {
   position: absolute;
   inset: 0;
-  background-color: var(--color-second-logo);
+  background-color: rgba(33, 150, 243, 0.9);
   width: 370px;
   height: 294px;
   display: flex;
