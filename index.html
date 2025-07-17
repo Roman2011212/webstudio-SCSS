@@ -21,6 +21,7 @@
     />
     <link rel="stylesheet" href=".//src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -124,7 +125,7 @@
           <h2 hidden>Переваги</h2>
 
           <ul class="advantages-list">
-            <li class="advantages-item">
+            <li data-aos="fade-right" class="advantages-item">
               <h3 class="advantages-title">Увага до деталей</h3>
               <p class="">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -132,7 +133,7 @@
               </p>
             </li>
 
-            <li class="advantages-item">
+            <li data-aos="fade-right" class="advantages-item">
               <h3 class="advantages-title">Пунктуальність</h3>
               <p class="advantages-text">
                 Завдання організації, особливо рамки 1 місце навчання кадрів
@@ -140,13 +141,13 @@
               </p>
             </li>
 
-            <li class="advantages-item">
+            <li data-aos="fade-left" class="advantages-item">
               <h3 class="advantages-title">Планування</h3>
               <p class="advantages-text">
                 Так само консультація з широким активом значною мірою зумовлює
               </p>
             </li>
-            <li class="advantages-item">
+            <li data-aos="fade-left" class="advantages-item">
               <h3 class="advantages-title">Сучасні технології</h3>
               <p class="advantages-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -161,7 +162,7 @@
           <h2 class="work-title">Чим ми займаємося</h2>
 
           <ul class="work-list">
-            <li class="work-item">
+            <li data-aos="flip-left" class="work-item">
               <article class="work-image">
                 <img
                   class="work-photo"
@@ -172,7 +173,7 @@
               </article>
             </li>
 
-            <li class="work-item">
+            <li data-aos="flip-up" class="work-item">
               <article class="work-image">
                 <img
                   class="work-photo"
@@ -182,7 +183,7 @@
                 <span class="work-label">Мобільні додатки</span>
               </article>
             </li>
-            <li class="work-item">
+            <li data-aos="flip-right" class="work-item">
               <article class="work-image">
                 <img
                   class="work-photo"
@@ -199,7 +200,7 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-item">
+            <li data-aos="zoom-in-right" class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -235,7 +236,7 @@
               </article>
             </li>
 
-            <li class="team-item">
+            <li data-aos="zoom-in-right" class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -271,7 +272,7 @@
               </article>
             </li>
 
-            <li class="team-item">
+            <li data-aos="zoom-in-left" class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -307,7 +308,7 @@
               </article>
             </li>
 
-            <li class="team-item">
+            <li data-aos="zoom-in-left" class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -347,8 +348,8 @@
       </section>
       <section class="brands">
         <div class="container">
-          <h2 class="brands-title">Постійні клієнти</h2>
-          <ul class="brands-list">
+          <h2 data-aos="flip-down" class="brands-title">Постійні клієнти</h2>
+          <ul data-aos="flip-up" class="brands-list">
             <li class="brands-item">
               <svg class="brands-icon">
                 <use href="./src/img/icon.svg#icon-logo"></use>
@@ -453,5 +454,9 @@
       </div>
     </footer>
     <script type="module" src="./src/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
