@@ -1,0 +1,40 @@
+.work {
+  padding-bottom: 94px;
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--color-text-title);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.work-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-label {
+  height: 70px;
+  font-size: 14px;
+  letter-spacing: 0.272px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-weight: 700;
+  position: absolute;
+  background-color: #28282880;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.work-image {
+  position: relative;
+}

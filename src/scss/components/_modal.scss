@@ -1,0 +1,97 @@
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-text-title);
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000003e;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 300ms;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(200%, 50%) rotate(180deg) scale(0.2);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 528px;
+  min-height: 587px;
+  padding: 25px;
+  background-color: var(--color-header-bord);
+  transform: translate(-50%, -50%);
+  transition-property: transform, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.btn-close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+.close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 25px;
+  height: 25px;
+  background-color: #00000000;
+  border-radius: 50px;
+  border: 1px solid #00000010;
+  color: #000000;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+.btn-submit {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+  color: var(--color-header-bord);
+}
+.btn-submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

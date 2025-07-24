@@ -1,0 +1,84 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--color-team-section);
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.team-item {
+  display: flex;
+  background-color: var(--color-header-bord);
+  flex-basis: calc((100% - 90px) / 4);
+  border-radius: 4px;
+}
+.team-title {
+  color: var(--color-text-title);
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.teammate {
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.teammate-name {
+  font-weight: 500;
+  font-size: 16;
+  line-height: 1.18;
+  color: var(--color-text-title);
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teammete-role {
+  font-weight: 400;
+  font-size: 16;
+  line-height: 1.18;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+.team-social-networks-container {
+  display: flex;
+  flex-basis: calc((100% - 36px) / 4);
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.team-social-networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #2195f300;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-networks-link:hover {
+  background-color: #2195f3;
+}
+.team-social-networks-link:hover .team-social-networks {
+  fill: #ffffff;
+}
+.team-social-networks {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
