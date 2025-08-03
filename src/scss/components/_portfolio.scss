@@ -21,7 +21,7 @@
 .project-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: $color-second-logo;
   width: 370px;
   height: 294px;
   display: flex;
@@ -41,21 +41,21 @@
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
-  color: var(--color-header-bord);
+  color: $color-header-bord;
   padding: 63px, 24px;
 }
 .portfolio-item {
-  color: var(--colorTextWords);
+  color: $color-second-logo;
 }
 .portfolio-item {
-  background-color: var(--color-header-bord);
+  background-color: $color-header-bord;
   flex-basis: calc((100% - 60px) / 3);
 }
 .product-name {
   font-weight: 700;
   font-size: 18;
   line-height: 2;
-  color: var(--color-text-title);
+  color: $color-text-title;
   padding-top: 30px;
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@
 .product-category {
   font-size: 16;
   line-height: 1.8;
-  color: var(--color-text-main);
+  color: $color-text-main;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -3,7 +3,7 @@
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--color-text-title);
+  color: $color-text-title;
   padding-top: 94px;
   padding-bottom: 50px;
 }
@@ -23,11 +23,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .brands-item {
-  fill: #afb1b8;
+  fill: $color-text-add;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid $color-text-add;
   border-radius: 4px;
   width: 170px;
   height: 92px;
@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #2196f3;
+  border: 1px solid $color-second-logo;
   border-radius: 4px;
   width: 170px;
   height: 92px;
@@ -50,7 +50,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .brands-item:hover .brands-icon {
-  fill: var(--color-second-logo);
+  fill: $color-second-logo;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

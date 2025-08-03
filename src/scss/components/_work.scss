@@ -6,7 +6,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  color: var(--color-text-title);
+  color: $color-text-title;
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
@@ -23,7 +23,7 @@
   height: 70px;
   font-size: 14px;
   letter-spacing: 0.272px;
-  color: #fff;
+  color: $color-header-bord;
   text-align: center;
   width: 100%;
   bottom: 0;

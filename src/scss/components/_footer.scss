@@ -20,15 +20,15 @@
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--color-second-logo);
+  color: $color-second-logo;
   padding-bottom: 20px;
   padding-top: 60px;
 }
 .logo-white {
   line-height: 1.19;
   font-weight: 700;
-  font-family: var(--font-secondary);
-  color: var(--color-header-bord);
+  font-family: $font-secondary;
+  color: $color-header-bord;
   font-size: 26px;
   padding-bottom: 20px;
   padding-top: 60px;
@@ -43,7 +43,7 @@
   padding-bottom: 9px;
 }
 .footer-contacts-link {
-  color: var(--color-header-bord);
+  color: $color-header-bord;
   --font-primary: "Roboto", serif;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #fff;
+  color: $color-header-bord;
   margin-bottom: 20px;
 }
 .form {
@@ -66,17 +66,17 @@
   width: 200px;
   height: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #2196f3;
+  background: $color-second-logo;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #fff;
+  color: $color-header-bord;
   margin-left: 12px;
 }
 .form-input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid $color-text-add;
   border-radius: 4px;
   min-width: 358px;
   min-height: 50px;
@@ -88,7 +88,7 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-header-bord);
+  color: $color-header-bord;
 }
 .footer-social-networks-container {
   display: flex;
@@ -106,9 +106,9 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: #ffffff10;
+  background-color: $color-social-networks;
   border-radius: 54px;
-  transition-property: fill, background-color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -118,16 +118,16 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  fill: #ffffff;
-  background-color: #2195f3;
+  fill: $color-header-bord;
+  background-color: $color-second-logo;
   border-radius: 54px;
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-networks-link:hover .team-social-networks {
-  fill: #ffffff;
-  background-color: #2195f3;
+  fill: $color-header-bord;
+  background-color: $color-second-logo;
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -135,7 +135,7 @@
 .footer-social-networks {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: $color-header-bord;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -143,12 +143,13 @@
 .footer-social-networks:hover {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: $color-header-bord;
+
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer {
-  background-color: var(--color-bg-primary);
+  background-color: $color-bg-primary;
   height: 252px;
 }

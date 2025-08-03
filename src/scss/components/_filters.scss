@@ -1,5 +1,5 @@
 .filters-button {
-  background-color: var(--color-team-section);
+  background-color: $color-team-section;
   color: var(--color-first-logo);
   font-weight: 500;
   font-size: 16px;
@@ -15,8 +15,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-button:hover {
-  background-color: var(--color-second-logo);
-  color: var(--color-header-bord);
+  background-color: $color-second-logo;
+  color: $color-header-bord;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
