@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 50px;
-  padding-bottom: 94px;
+  @include vertical-padding;
 }
 .project {
   position: relative;
@@ -55,18 +55,9 @@
   font-weight: 700;
   font-size: 18;
   line-height: 2;
-  color: $color-text-title;
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %title;
 }
 .product-category {
-  font-size: 16;
   line-height: 1.8;
-  color: $color-text-main;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 30px;
+  @extend %subtitle;
 }

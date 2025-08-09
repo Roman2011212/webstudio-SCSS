@@ -1,11 +1,14 @@
 @import "./utils/variables";
-@import "./global/global";
+@import "./utils/placeholder";
+@import "./utils/mixin";
 @import "./global/reset";
+@import "./global/global";
+@import "./components/container";
 @import "./components/header";
 @import "./components/container";
 @import "./components/hero";
-@import "./components/modal";
 @import "./components/advantages";
+@import "./components/modal";
 @import "./components/work";
 @import "./components/team";
 @import "./components/brands";

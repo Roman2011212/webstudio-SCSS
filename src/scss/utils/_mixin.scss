@@ -1,0 +1,4 @@
+@mixin vertical-padding($size: 95px) {
+  padding-top: $size;
+  padding-bottom: $size;
+}

@@ -1,5 +1,6 @@
 .work {
-  padding-bottom: 94px;
+  @include vertical-padding;
+  padding-top: 0;
 }
 
 .work-title {

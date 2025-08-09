@@ -1,0 +1,35 @@
+%button {
+  background-color: $color-second-logo;
+  color: $color-header-bord;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  border: 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+%title {
+  font-weight: 500;
+  font-size: 16;
+  line-height: 1.18;
+  color: $color-text-title;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%subtitle {
+  color: $color-text-main;
+  font-weight: 400;
+  font-size: 16;
+  line-height: 1.18;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
+}

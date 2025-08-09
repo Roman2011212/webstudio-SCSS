@@ -1,6 +1,5 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include vertical-padding;
   background-color: $color-team-section;
 }
 .team-list {
@@ -28,24 +27,10 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 .teammate-name {
-  font-weight: 500;
-  font-size: 16;
-  line-height: 1.18;
-  color: $color-text-title;
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %title;
 }
 .teammete-role {
-  font-weight: 400;
-  font-size: 16;
-  line-height: 1.18;
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 16px;
+  @extend %subtitle;
 }
 .team-social-networks-container {
   display: flex;

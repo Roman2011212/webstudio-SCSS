@@ -12,8 +12,7 @@
   gap: 30px;
 }
 .advantages {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  @include vertical-padding;
 }
 .advantages-title {
   font-weight: 700;

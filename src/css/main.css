@@ -1,15 +1,39 @@
-body {
-  font-family: "Roboto", serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #757575;
+.filters-button:hover, .form-button, .btn-submit, .hero-button {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  border: 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
+.product-name, .teammate-name {
+  font-weight: 500;
+  font-size: 16;
+  line-height: 1.18;
+  color: #212121;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-category, .teammete-role {
+  color: #757575;
+  font-weight: 400;
+  font-size: 16;
+  line-height: 1.18;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
 }
 
 h1,
@@ -41,6 +65,28 @@ button {
   color: inherit;
   font-size: inherit;
   font-family: inherit;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #757575;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-container {
@@ -206,20 +252,41 @@ button {
 }
 
 .hero-button {
-  background-color: #2196f3;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  border: 0;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  height: 50px;
-  width: 216px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.advantages-item:nth-child(2)::before {
+  background-image: url(../img/advantages/clock\ 1.svg);
+}
+
+.advantages-item:nth-child(3)::before {
+  background-image: url(../img/advantages/diagram\ 1.svg);
+}
+
+.advantages-item:nth-child(4)::before {
+  background-image: url(../img/advantages/astronaut\ 1.svg);
+}
+
+.advantages-list {
+  display: flex;
+  gap: 30px;
+}
+
+.advantages {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.advantages-title {
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantages-text {
+  color: #757575;
 }
 
 .form-title {
@@ -259,6 +326,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 99999999;
   min-width: 528px;
   min-height: 587px;
   padding: 25px;
@@ -315,11 +383,10 @@ input[type=checkbox] {
 
 .btn-submit {
   width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #2196f3;
-  color: var(--color-header-bord);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .btn-submit-container {
@@ -328,39 +395,10 @@ input[type=checkbox] {
   align-items: center;
 }
 
-.advantages-item:nth-child(2)::before {
-  background-image: url(../img/advantages/clock\ 1.svg);
-}
-
-.advantages-item:nth-child(3)::before {
-  background-image: url(../img/advantages/diagram\ 1.svg);
-}
-
-.advantages-item:nth-child(4)::before {
-  background-image: url(../img/advantages/astronaut\ 1.svg);
-}
-
-.advantages-list {
-  display: flex;
-  gap: 30px;
-}
-
-.advantages {
+.work {
   padding-top: 95px;
   padding-bottom: 95px;
-}
-
-.advantages-title {
-  font-weight: 700;
-  color: #000000;
-}
-
-.advantages-text {
-  color: #757575;
-}
-
-.work {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .work-title {
@@ -403,8 +441,8 @@ input[type=checkbox] {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 95px;
+  padding-bottom: 95px;
   background-color: #f5f4fa;
 }
 
@@ -433,28 +471,6 @@ input[type=checkbox] {
 
 .teammate {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-}
-
-.teammate-name {
-  font-weight: 500;
-  font-size: 16;
-  line-height: 1.18;
-  color: #212121;
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.teammete-role {
-  font-weight: 400;
-  font-size: 16;
-  line-height: 1.18;
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 16px;
 }
 
 .team-social-networks-container {
@@ -632,18 +648,9 @@ input[type=checkbox] {
 }
 
 .form-button {
-  border-radius: 4px;
   width: 200px;
   height: 50px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #2196f3;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: #ffffff;
-  margin-left: 12px;
+  padding: 10px 28px;
 }
 
 .form-input {
@@ -738,28 +745,22 @@ input[type=checkbox] {
   line-height: 1.6;
   border: 0;
   border-radius: 4px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: 6px 25px;
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filters-button:hover {
-  background-color: #2196f3;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  border: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: auto;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filters-list {
@@ -769,7 +770,9 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  padding-top: 94px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  padding-bottom: 0;
 }
 
 .product {
@@ -787,7 +790,8 @@ input[type=checkbox] {
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 50px;
-  padding-bottom: 94px;
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .project {
@@ -836,19 +840,8 @@ input[type=checkbox] {
   font-weight: 700;
   font-size: 18;
   line-height: 2;
-  color: #212121;
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .product-category {
-  font-size: 16;
   line-height: 1.8;
-  color: #757575;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 30px;
 }

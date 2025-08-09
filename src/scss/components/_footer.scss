@@ -62,18 +62,10 @@
   gap: 12px;
 }
 .form-button {
-  border-radius: 4px;
   width: 200px;
   height: 50px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: $color-second-logo;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: $color-header-bord;
-  margin-left: 12px;
+  padding: 10px 28px;
+  @extend %button;
 }
 .form-input {
   border: 1px solid $color-text-add;
