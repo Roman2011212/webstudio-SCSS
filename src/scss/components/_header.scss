@@ -1,7 +1,6 @@
 .header-container {
   display: flex;
-  justify-content: center;
-  gap: 93px;
+  justify-content: space-between;
   align-items: center;
 }
 .header-portfolio {
@@ -9,12 +8,21 @@
 }
 .header-logo {
   font-family: $font-secondary;
-  font-size: 26px;
+  font-size: 24px;
   color: $color-second-logo;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
+.header-button {
+  display: block;
+  padding: 0;
+  background-color: #00000000;
+  background-image: url(menu.svg);
+  border: none;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .logo-black {
   font-family: $font-secondary;
   color: $color-first-logo;
@@ -23,27 +31,17 @@
 }
 .navigation {
   flex-grow: 1;
+  display: none;
 }
 
 .nav-list {
   display: flex;
+  display: none;
   gap: 50px;
-}
-.advantages-item::before {
-  content: "";
-  display: block;
-  background-size: 270px;
-  height: 120px;
-  background-color: $color-team-section;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-image: url(../img/advantages/antenna\ 1.svg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .header-contacts-list {
+  display: none;
   display: flex;
   gap: 50px;
   flex-direction: row;
@@ -51,6 +49,7 @@
 }
 
 .nav-link {
+  display: none;
   font-weight: 500;
   color: $color-text-title;
   letter-spacing: 0.02em;
@@ -81,14 +80,17 @@
 }
 
 .nav-link:hover::after {
+  display: none;
   opacity: 1;
   transform: scaleX(1);
 }
 .header-contacts-container {
+  display: none;
   display: flex;
   align-items: center;
 }
 .header-contacts-icon {
+  display: none;
   fill: $color-text-title;
   width: 16px;
   height: 13px;
@@ -98,6 +100,7 @@
 }
 
 .address {
+  display: none;
   font-weight: 500;
   color: $color-text-title;
   letter-spacing: 0.02em;
@@ -106,6 +109,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address:hover {
+  display: none;
   color: $color-second-logo;
 }
 .address:hover .header-contacts-icon {

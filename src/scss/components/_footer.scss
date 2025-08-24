@@ -1,18 +1,22 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: $color-bg-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer-container {
   max-width: 1600px;
-  max-height: 80px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 70px;
 }
 .logo {
@@ -37,18 +41,14 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  text-align: center;
   padding-bottom: 9px;
 }
 .footer-contacts-link {
   color: $color-header-bord;
   --font-primary: "Roboto", serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   padding-bottom: 9px;
+  text-align: center;
 }
 .subscribe-title {
   font-weight: 700;
@@ -56,10 +56,12 @@
   text-transform: uppercase;
   color: $color-header-bord;
   margin-bottom: 20px;
+  text-align: center;
 }
 .form {
   display: flex;
   gap: 12px;
+  flex-direction: column;
 }
 .form-button {
   width: 200px;
@@ -70,8 +72,9 @@
 .form-input {
   border: 1px solid $color-text-add;
   border-radius: 4px;
-  min-width: 358px;
   min-height: 50px;
+  min-width: 290px;
+  max-width: 450px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
 }
@@ -84,9 +87,7 @@
 }
 .footer-social-networks-container {
   display: flex;
-  flex-basis: calc((100% - 36px) / 4);
   gap: 12px;
-
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -140,8 +141,4 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer {
-  background-color: $color-bg-primary;
-  height: 252px;
 }

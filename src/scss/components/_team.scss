@@ -6,16 +6,18 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .team-item {
   display: flex;
   background-color: $color-header-bord;
-  flex-basis: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 1);
   border-radius: 4px;
+  min-width: 100%;
 }
 .team-title {
   color: $color-text-title;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   font-weight: 700;
   display: flex;

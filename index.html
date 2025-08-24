@@ -28,6 +28,22 @@
         <a class="header-logo" href="/index.html"
           >Web<span class="logo-black">Studio</span></a
         >
+        <button class="header-button">
+          <svg
+            width="24"
+            height="16"
+            viewBox="0 0 24 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
+              fill="black"
+            />
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="nav-list">
             <li class="nav-item">
@@ -124,7 +140,7 @@
           <h2 hidden>Переваги</h2>
 
           <ul class="advantages-list">
-            <li data-aos="fade-right" class="advantages-item">
+            <li class="advantages-item">
               <h3 class="advantages-title">Увага до деталей</h3>
               <p class="">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -132,7 +148,7 @@
               </p>
             </li>
 
-            <li data-aos="fade-right" class="advantages-item">
+            <li class="advantages-item">
               <h3 class="advantages-title">Пунктуальність</h3>
               <p class="advantages-text">
                 Завдання організації, особливо рамки 1 місце навчання кадрів
@@ -140,13 +156,13 @@
               </p>
             </li>
 
-            <li data-aos="fade-left" class="advantages-item">
+            <li class="advantages-item">
               <h3 class="advantages-title">Планування</h3>
               <p class="advantages-text">
                 Так само консультація з широким активом значною мірою зумовлює
               </p>
             </li>
-            <li data-aos="fade-left" class="advantages-item">
+            <li class="advantages-item">
               <h3 class="advantages-title">Сучасні технології</h3>
               <p class="advantages-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -161,7 +177,7 @@
           <h2 class="work-title">Чим ми займаємося</h2>
 
           <ul class="work-list">
-            <li data-aos="flip-left" class="work-item">
+            <li class="work-item">
               <article class="work-image">
                 <img
                   class="work-photo"
@@ -172,7 +188,7 @@
               </article>
             </li>
 
-            <li data-aos="flip-up" class="work-item">
+            <li class="work-item">
               <article class="work-image">
                 <img
                   class="work-photo"
@@ -182,7 +198,7 @@
                 <span class="work-label">Мобільні додатки</span>
               </article>
             </li>
-            <li data-aos="flip-right" class="work-item">
+            <li class="work-item">
               <article class="work-image">
                 <img
                   class="work-photo"
@@ -199,7 +215,7 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
-            <li data-aos="zoom-in-right" class="team-item">
+            <li class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -235,7 +251,7 @@
               </article>
             </li>
 
-            <li data-aos="zoom-in-right" class="team-item">
+            <li class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -271,7 +287,7 @@
               </article>
             </li>
 
-            <li data-aos="zoom-in-left" class="team-item">
+            <li class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -307,7 +323,7 @@
               </article>
             </li>
 
-            <li data-aos="zoom-in-left" class="team-item">
+            <li class="team-item">
               <article class="teammate">
                 <div class="teammate-photo">
                   <img
@@ -347,8 +363,8 @@
       </section>
       <section class="brands">
         <div class="container">
-          <h2 data-aos="flip-down" class="brands-title">Постійні клієнти</h2>
-          <ul data-aos="flip-up" class="brands-list">
+          <h2 class="brands-title">Постійні клієнти</h2>
+          <ul class="brands-list">
             <li class="brands-item">
               <svg class="brands-icon">
                 <use href="./src/img/icon.svg#icon-logo"></use>
@@ -411,26 +427,28 @@
         </div>
         <div class="footer-social-networks-container">
           <h3 class="footer-join">приєднуйтесь</h3>
-          <a class="footer-social-networks-link" href="#">
-            <svg class="footer-social-networks">
-              <use href="./src/img/icon.svg#icon-instagram"></use>
-            </svg>
-          </a>
-          <a class="footer-social-networks-link" href="#">
-            <svg class="footer-social-networks">
-              <use href="./src/img/icon.svg#icon-twitter"></use>
-            </svg>
-          </a>
-          <a class="footer-social-networks-link" href="#">
-            <svg class="footer-social-networks">
-              <use href="./src/img/icon.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          <a class="footer-social-networks-link" href="#">
-            <svg class="footer-social-networks">
-              <use href="./src/img/icon.svg#icon-linkedin"></use>
-            </svg>
-          </a>
+          <div class="footyer-icons-container">
+            <a class="footer-social-networks-link" href="#">
+              <svg class="footer-social-networks">
+                <use href="./src/img/icon.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a class="footer-social-networks-link" href="#">
+              <svg class="footer-social-networks">
+                <use href="./src/img/icon.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a class="footer-social-networks-link" href="#">
+              <svg class="footer-social-networks">
+                <use href="./src/img/icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a class="footer-social-networks-link" href="#">
+              <svg class="footer-social-networks">
+                <use href="./src/img/icon.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="form-container">
           <h3 class="subscribe-title">Підпишіться на розсилку</h3>
@@ -454,8 +472,5 @@
     </footer>
     <script type="module" src="./src/js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

@@ -83,6 +83,7 @@ img {
 
 .container {
   max-width: 1200px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -91,8 +92,7 @@ img {
 
 .header-container {
   display: flex;
-  justify-content: center;
-  gap: 93px;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -102,10 +102,21 @@ img {
 
 .header-logo {
   font-family: "Raleway", serif;
-  font-size: 26px;
+  font-size: 24px;
   color: #2196f3;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.header-button {
+  display: block;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(menu.svg);
+  border: none;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo-black {
@@ -117,28 +128,17 @@ img {
 
 .navigation {
   flex-grow: 1;
+  display: none;
 }
 
 .nav-list {
   display: flex;
+  display: none;
   gap: 50px;
 }
 
-.advantages-item::before {
-  content: "";
-  display: block;
-  background-size: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-image: url(../img/advantages/antenna\ 1.svg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 .header-contacts-list {
+  display: none;
   display: flex;
   gap: 50px;
   flex-direction: row;
@@ -146,6 +146,7 @@ img {
 }
 
 .nav-link {
+  display: none;
   font-weight: 500;
   color: #212121;
   letter-spacing: 0.02em;
@@ -176,16 +177,19 @@ img {
 }
 
 .nav-link:hover::after {
+  display: none;
   opacity: 1;
   transform: scaleX(1);
 }
 
 .header-contacts-container {
+  display: none;
   display: flex;
   align-items: center;
 }
 
 .header-contacts-icon {
+  display: none;
   fill: #212121;
   width: 16px;
   height: 13px;
@@ -195,6 +199,7 @@ img {
 }
 
 .address {
+  display: none;
   font-weight: 500;
   color: #212121;
   letter-spacing: 0.02em;
@@ -204,6 +209,7 @@ img {
 }
 
 .address:hover {
+  display: none;
   color: #2196f3;
 }
 
@@ -213,6 +219,7 @@ img {
 
 .container {
   max-width: 1200px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -236,12 +243,13 @@ img {
   flex-direction: column;
   align-items: center;
   background-position: center;
+  width: 100%;
 }
 
 .hero-title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.3;
   display: flex;
   justify-content: center;
@@ -258,21 +266,40 @@ img {
   padding-bottom: 10px;
 }
 
+.advantages-item::before {
+  content: "";
+  display: block;
+  flex-basis: calc((100% - 90px) / 1);
+  background-size: 100%;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-image: url(../img/advantages/antenna\ 1.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .advantages-item:nth-child(2)::before {
+  width: 100%;
   background-image: url(../img/advantages/clock\ 1.svg);
 }
 
 .advantages-item:nth-child(3)::before {
+  width: 100%;
   background-image: url(../img/advantages/diagram\ 1.svg);
 }
 
 .advantages-item:nth-child(4)::before {
+  width: 100%;
   background-image: url(../img/advantages/astronaut\ 1.svg);
 }
 
 .advantages-list {
   display: flex;
   gap: 30px;
+  flex-direction: column;
 }
 
 .advantages {
@@ -327,8 +354,9 @@ img {
   top: 50%;
   left: 50%;
   z-index: 99999999;
-  min-width: 528px;
-  min-height: 587px;
+  min-width: 320px;
+  min-height: 609px;
+  max-width: 450px;
   padding: 25px;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
@@ -396,9 +424,8 @@ input[type=checkbox] {
 }
 
 .work {
-  padding-top: 95px;
-  padding-bottom: 95px;
   padding-top: 0;
+  display: none;
 }
 
 .work-title {
@@ -450,18 +477,20 @@ input[type=checkbox] {
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .team-item {
   display: flex;
   background-color: #ffffff;
-  flex-basis: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 1);
   border-radius: 4px;
+  min-width: 100%;
 }
 
 .team-title {
   color: #212121;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   font-weight: 700;
   display: flex;
@@ -549,7 +578,7 @@ input[type=checkbox] {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 90px) / 2);
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -579,19 +608,23 @@ input[type=checkbox] {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-container {
   max-width: 1600px;
-  max-height: 80px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 70px;
 }
 
@@ -619,19 +652,15 @@ input[type=checkbox] {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  text-align: center;
   padding-bottom: 9px;
 }
 
 .footer-contacts-link {
   color: #ffffff;
   --font-primary: "Roboto", serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   padding-bottom: 9px;
+  text-align: center;
 }
 
 .subscribe-title {
@@ -640,11 +669,13 @@ input[type=checkbox] {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .form {
   display: flex;
   gap: 12px;
+  flex-direction: column;
 }
 
 .form-button {
@@ -656,8 +687,9 @@ input[type=checkbox] {
 .form-input {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  min-width: 358px;
   min-height: 50px;
+  min-width: 290px;
+  max-width: 450px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
 }
@@ -672,7 +704,6 @@ input[type=checkbox] {
 
 .footer-social-networks-container {
   display: flex;
-  flex-basis: calc((100% - 36px) / 4);
   gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
@@ -730,11 +761,6 @@ input[type=checkbox] {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer {
-  background-color: #2f303a;
-  height: 252px;
 }
 
 .filters-button {
