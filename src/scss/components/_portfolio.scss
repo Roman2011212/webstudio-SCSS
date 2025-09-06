@@ -10,6 +10,8 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
   padding-top: 50px;
   @include vertical-padding;
@@ -22,8 +24,8 @@
   position: absolute;
   inset: 0;
   background-color: $color-second-logo;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +51,7 @@
 }
 .portfolio-item {
   background-color: $color-header-bord;
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 1);
 }
 .product-name {
   font-weight: 700;

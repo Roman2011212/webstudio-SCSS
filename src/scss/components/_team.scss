@@ -9,11 +9,9 @@
   flex-wrap: wrap;
 }
 .team-item {
-  display: flex;
-  background-color: $color-header-bord;
   flex-basis: calc((100% - 90px) / 1);
-  border-radius: 4px;
   min-width: 100%;
+  max-width: 354px;
 }
 .team-title {
   color: $color-text-title;
@@ -27,6 +25,8 @@
 .teammate {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: $color-header-bord;
 }
 .teammate-name {
   @extend %title;

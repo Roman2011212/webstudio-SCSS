@@ -62,6 +62,8 @@
   display: flex;
   gap: 12px;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .form-button {
   width: 200px;
@@ -73,8 +75,8 @@
   border: 1px solid $color-text-add;
   border-radius: 4px;
   min-height: 50px;
-  min-width: 290px;
   max-width: 450px;
+  min-width: 290px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
 }
@@ -87,12 +89,8 @@
 }
 .footer-social-networks-container {
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
 }
-
 .footer-social-networks-link {
   display: flex;
   justify-content: center;
@@ -106,17 +104,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-networks-link:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
   fill: $color-header-bord;
   background-color: $color-second-logo;
-  border-radius: 54px;
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-networks-link:hover .team-social-networks {
   fill: $color-header-bord;
@@ -134,11 +123,5 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-networks:hover {
-  width: 20px;
-  height: 20px;
   fill: $color-header-bord;
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
