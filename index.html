@@ -28,141 +28,77 @@
         <a class="header-logo" href="/index.html"
           >Web<span class="logo-black">Studio</span></a
         >
-        <button
-          class="header-button js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="16"
-            viewBox="0 0 24 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
-              fill="black"
-            />
-          </svg>
-        </button>
+        <div class="mobile-menu">
+          <input
+            class="mobile-menu__check menu-check"
+            type="checkbox"
+            id="toggle-menu"
+          />
+          <label class="mobile-menu__label menu-toggle" for="toggle-menu"
+            ><span class="menu-toggle__line"></span
+          ></label>
 
-        <div class="nav-container">
-          <nav class="navigation">
-            <ul class="nav-list">
-              <li class="nav-item header-item">
-                <a class="nav-link" href="./index.html">Студія</a>
-              </li>
-              <li class="nav-item header-item">
-                <a class="nav-link" href="./src/pages/portfolio.html"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="nav-item header-item">
-                <a class="nav-link" href="#">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="header-contacts-list">
-            <li class="header-item">
-              <div class="header-contacts-container">
-                <a class="address-email" href="mailto:info@devstudio.com">
-                  <svg class="header-contacts-icon">
-                    <use href="./src/img/icon.svg#icon-konvert"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </div>
-            </li>
-            <li class="header-item">
-              <div class="header-contacts-container">
-                <a class="address" href="tel:+38096111111">
-                  <svg class="header-contacts-icon">
-                    <use href="./src/img/icon.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="header-close-button js-close-menu">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z"
-                fill="#212121"
-              />
-            </svg>
-          </button>
-          <div class="mobile-menu">
+          <div class="menu-container">
             <nav class="navigation">
               <ul class="nav-list">
-                <li class="nav-item header-item">
+                <li class="nav-item">
                   <a class="nav-link" href="./index.html">Студія</a>
                 </li>
-                <li class="nav-item header-item">
+                <li class="nav-item">
                   <a class="nav-link" href="./src/pages/portfolio.html"
                     >Портфоліо</a
                   >
                 </li>
-                <li class="nav-item header-item">
+                <li class="nav-item">
                   <a class="nav-link" href="#">Контакти</a>
                 </li>
               </ul>
             </nav>
             <ul class="header-contacts-list">
               <li class="header-item">
-                <div class="header-contacts-container">
-                  <a class="address-email" href="mailto:info@devstudio.com">
-                    <svg class="header-contacts-icon">
-                      <use href="./src/img/icon.svg#icon-konvert"></use>
-                    </svg>
-                    info@devstudio.com</a
-                  >
-                </div>
+                <a class="address-email" href="mailto:info@devstudio.com">
+                  <svg class="header-contacts-icon">
+                    <use href="./src/img/icon.svg#icon-konvert"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
               </li>
               <li class="header-item">
-                <div class="header-contacts-container">
-                  <a class="address" href="tel:+38096111111">
-                    <svg class="header-contacts-icon">
-                      <use href="./src/img/icon.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a
+                <a class="address" href="tel:+38096111111">
+                  <svg class="header-contacts-icon">
+                    <use href="./src/img/icon.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <ul class="social-menu-list">
+                <li class="social-menu-item">
+                  <a class="social-menu" href="https://www.instagram.com/"
+                    >Instagram</a
                   >
-                </div>
-              </li>
-            </ul>
-            <ul class="social-menu-list">
-              <li class="social-menu-item">
-                <a class="social-menu" href="https://www.instagram.com/"
-                  >Instagram</a
-                >
-              </li>
-              <li class="social-menu-item">
-                <a class="social-menu" href="https://x.com/?lang=uk">Twitter</a>
-              </li>
-              <li class="social-menu-item">
-                <a
-                  class="social-menu"
-                  href="https://www.facebook.com/?locale=uk_UA"
-                  >Facebook</a
-                >
-              </li>
-              <li class="social-menu-item">
-                <a class="social-menu" href="https://ua.linkedin.com/"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
+                </li>
+                <li class="social-menu-item">
+                  <a class="social-menu" href="https://x.com/?lang=uk"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="social-menu-item">
+                  <a
+                    class="social-menu"
+                    href="https://www.facebook.com/?locale=uk_UA"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="social-menu-item">
+                  <a class="social-menu" href="https://ua.linkedin.com/"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

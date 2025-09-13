@@ -40,3 +40,21 @@
 .advantages-text {
   color: $color-text-main;
 }
+@media (min-width: 1024px) {
+  .advantages-list {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+  }
+  .advantages {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+  .advantages-title {
+    font-weight: 700;
+    color: $color-first-logo;
+  }
+  .advantages-text {
+    color: $color-text-main;
+  }
+}

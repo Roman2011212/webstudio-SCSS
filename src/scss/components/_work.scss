@@ -39,3 +39,12 @@
 .work-image {
   position: relative;
 }
+@media (min-width: 1024px) {
+  .work {
+    padding-top: 0;
+    display: flex;
+  }
+  .work-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}

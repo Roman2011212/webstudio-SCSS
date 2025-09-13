@@ -9,13 +9,18 @@
   padding-bottom: 200px;
   background-color: $color-bg-primary;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
-    url(../img/hero/hero\ img.jpg);
+    url(../img/hero/hero\ img-mobile.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-position: center;
   width: 100%;
+  @media (min-device-pixel-rato: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../img/hero/hero\ img-mobile@2x.jpg);
+  }
 }
 .hero-title {
   color: $color-header-bord;
@@ -35,4 +40,44 @@
   padding-top: 10px;
   padding-bottom: 10px;
   @extend %button;
+}
+@media (min-width: 481px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: $color-bg-primary;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+      url(../img/hero/hero\ img-tablet.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    width: 100%;
+    @media (min-device-pixel-rato: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../img/hero/hero\ img-tablet@2x.jpg);
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: $color-bg-primary;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+      url(../img/hero/hero\ img-desctop.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    width: 100%;
+    @media (min-device-pixel-rato: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../img/hero/hero\ img-desctop@2x.jpg);
+    }
+  }
 }
