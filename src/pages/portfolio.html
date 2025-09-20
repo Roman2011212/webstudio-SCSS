@@ -22,60 +22,84 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header header-portfolio">
+    <header class="header">
       <div class="header-container container">
         <a class="header-logo" href="/index.html"
           >Web<span class="logo-black">Studio</span></a
         >
-        <button class="header-button">
-          <svg
-            width="24"
-            height="16"
-            viewBox="0 0 24 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
-              fill="black"
-            />
-          </svg>
-        </button>
-        <nav class="navigation">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Студія</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="header-contacts-list">
-          <li class="header-item">
-            <div class="header-contacts-container">
-              <a class="address" href="mailto:info@devstudio.com">
-                <svg class="header-contacts-icon">
-                  <use href="./src/img/icon.svg#icon-konvert"></use>
-                </svg>
-                info@devstudio.com</a
-              >
+        <div class="mobile-menu">
+          <input
+            class="mobile-menu__check menu-check"
+            type="checkbox"
+            id="toggle-menu"
+          />
+          <label class="mobile-menu__label menu-toggle" for="toggle-menu"
+            ><span class="menu-toggle__line"></span
+          ></label>
+
+          <div class="menu-container">
+            <nav class="navigation">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Студія</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./src/pages/portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="header-contacts-list">
+              <li class="header-item">
+                <a class="address-email" href="mailto:info@devstudio.com">
+                  <svg class="header-contacts-icon">
+                    <use href="./src/img/icon.svg#icon-konvert"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="address" href="tel:+38096111111">
+                  <svg class="header-contacts-icon">
+                    <use href="./src/img/icon.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <ul class="social-menu-list">
+                <li class="social-menu-item">
+                  <a class="social-menu" href="https://www.instagram.com/"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="social-menu-item">
+                  <a class="social-menu" href="https://x.com/?lang=uk"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="social-menu-item">
+                  <a
+                    class="social-menu"
+                    href="https://www.facebook.com/?locale=uk_UA"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="social-menu-item">
+                  <a class="social-menu" href="https://ua.linkedin.com/"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
             </div>
-          </li>
-          <li class="header-item">
-            <div class="header-contacts-container">
-              <a class="address" href="tel:+38096111111">
-                <svg class="header-contacts-icon">
-                  <use href="./src/img/icon.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 111</a
-              >
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -99,14 +123,52 @@
             </li>
           </ul>
           <ul class="portfolio-list">
-            <li data-aos="fade-left" class="portfolio-item">
+            <li class="portfolio-item">
               <article class="product">
                 <div class="project">
-                  <img
-                    class="project-photo"
-                    src="../img/portfolio/technokriak.jpg"
-                    alt="технокряк"
-                  />
+                  <picture>
+                    <!-- Мобільна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/technokriak-mobile.jpg    1x,
+                        ../img/portfolio/technokriak-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                      sizes="450px"
+                    />
+
+                    <!-- Планшетна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/technokriak-tablet.jpg    1x,
+                        ../img/portfolio/technokriak-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                      sizes="354px"
+                    />
+
+                    <!-- Десктопна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/technokriak-desctop.jpg    1x,
+                        ../img/portfolio/technokriak-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                      sizes="370px"
+                    />
+
+                    <img
+                      class="project-photo"
+                      src="../img/portfolio/technokriak.jpg"
+                      alt="технокряк"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-text-overlay">
@@ -121,14 +183,52 @@
                 <p class="product-category">Веб-сайт</p>
               </article>
             </li>
-            <li data-aos="fade-left" class="portfolio-item">
+            <li class="portfolio-item">
               <article class="product">
                 <div class="project">
-                  <img
-                    class="project-photo"
-                    src="../img/portfolio/poster.jpg"
-                    alt="Постер"
-                  />
+                  <picture>
+                    <!-- Мобільна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/poster-mobile.jpg    1x,
+                        ../img/portfolio/poster-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                      sizes="450px"
+                    />
+
+                    <!-- Планшетна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/poster-tablet.jpg    1x,
+                        ../img/portfolio/poster-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                      sizes="354px"
+                    />
+
+                    <!-- Десктопна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/poster-desctop.jpg    1x,
+                        ../img/portfolio/poster-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                      sizes="370px"
+                    />
+
+                    <img
+                      class="project-photo"
+                      src="../img/portfolio/poster.jpg"
+                      alt="Постер"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-text-overlay">
@@ -144,14 +244,52 @@
               </article>
             </li>
 
-            <li data-aos="fade-left" class="portfolio-item">
+            <li class="portfolio-item">
               <article class="product">
                 <div class="project">
-                  <img
-                    class="project-photo"
-                    src="../img/portfolio/restorunt.jpg"
-                    alt="Ресторан"
-                  />
+                  <picture>
+                    <!-- Мобільна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/restorunt-mobile.jpg    1x,
+                        ../img/portfolio/restorunt-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                      sizes="450px"
+                    />
+
+                    <!-- Планшетна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/restorunt-tablet.jpg    1x,
+                        ../img/portfolio/restorunt-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                      sizes="354px"
+                    />
+
+                    <!-- Десктопна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/restorunt-desctop.jpg    1x,
+                        ../img/portfolio/restorunt-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                      sizes="370px"
+                    />
+
+                    <img
+                      class="project-photo"
+                      src="../img/portfolio/restorunt.jpg"
+                      alt="Ресторан"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-text-overlay">
@@ -166,14 +304,52 @@
                 <p class="product-category">Додаток</p>
               </article>
             </li>
-            <li data-aos="fade-right" class="portfolio-item">
+            <li class="portfolio-item">
               <article class="product">
                 <div class="project">
-                  <img
-                    class="project-photo"
-                    src="../img/portfolio/project.jpg"
-                    alt="навушники"
-                  />
+                  <picture>
+                    <!-- Мобільна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/project-mobile.jpg    1x,
+                        ../img/portfolio/project-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                      sizes="450px"
+                    />
+
+                    <!-- Планшетна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/project-tablet.jpg    1x,
+                        ../img/portfolio/project-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                      sizes="354px"
+                    />
+
+                    <!-- Десктопна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/project-desctop.jpg    1x,
+                        ../img/portfolio/project-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                      sizes="370px"
+                    />
+
+                    <img
+                      class="project-photo"
+                      src="../img/portfolio/project.jpg"
+                      alt="навушники"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-text-overlay">
@@ -188,14 +364,52 @@
                 <p class="product-category">Маркетинг</p>
               </article>
             </li>
-            <li data-aos="fade-right" class="portfolio-item">
+            <li class="portfolio-item">
               <article class="product">
                 <div class="project">
-                  <img
-                    class="Product-img"
-                    src="../img/portfolio/boxes.jpg"
-                    alt="коробки"
-                  />
+                  <picture>
+                    <!-- Мобільна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/boxes-mobile.jpg    1x,
+                        ../img/portfolio/boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                      sizes="450px"
+                    />
+
+                    <!-- Планшетна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/boxes-tablet.jpg    1x,
+                        ../img/portfolio/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                      sizes="354px"
+                    />
+
+                    <!-- Десктопна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/boxes-desctop.jpg    1x,
+                        ../img/portfolio/boxes-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                      sizes="370px"
+                    />
+
+                    <img
+                      class="Product-img"
+                      src="../img/portfolio/boxes.jpg"
+                      alt="коробки"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-text-overlay">
@@ -210,14 +424,52 @@
                 <p class="product-category">Додаток</p>
               </article>
             </li>
-            <li data-aos="fade-right" class="portfolio-item">
+            <li class="portfolio-item">
               <article class="product">
                 <div class="project">
-                  <img
-                    class="product-img"
-                    src="../img/portfolio/monitor.jpg"
-                    alt="монітор"
-                  />
+                  <picture>
+                    <!-- Мобільна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/monitor-mobile.jpg    1x,
+                        ../img/portfolio/monitor-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                      sizes="450px"
+                    />
+
+                    <!-- Планшетна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/monitor-tablet.jpg    1x,
+                        ../img/portfolio/monitor-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                      sizes="354px"
+                    />
+
+                    <!-- Десктопна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/monitor-desctop.jpg    1x,
+                        ../img/portfolio/monitor-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                      sizes="370px"
+                    />
+
+                    <img
+                      class="product-img"
+                      src="../img/portfolio/monitor.jpg"
+                      alt="монітор"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-text-overlay">
@@ -232,14 +484,52 @@
                 <p class="product-category">Веб-сайт</p>
               </article>
             </li>
-            <li data-aos="fade-left" class="portfolio-item">
+            <li class="portfolio-item">
               <article class="product">
                 <div class="project">
-                  <img
-                    class="product-img"
-                    src="../img/portfolio/book.jpg"
-                    alt="книжка"
-                  />
+                  <picture>
+                    <!-- Мобільна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/book-mobile.jpg    1x,
+                        ../img/portfolio/book-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                      sizes="450px"
+                    />
+
+                    <!-- Планшетна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/book-tablet.jpg    1x,
+                        ../img/portfolio/book-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                      sizes="354px"
+                    />
+
+                    <!-- Десктопна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/book-desctop.jpg    1x,
+                        ../img/portfolio/book-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                      sizes="370px"
+                    />
+
+                    <img
+                      class="product-img"
+                      src="../img/portfolio/book.jpg"
+                      alt="книжка"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-text-overlay">
@@ -254,14 +544,52 @@
                 <p class="product-category">Дизайн</p>
               </article>
             </li>
-            <li data-aos="fade-left" class="portfolio-item">
+            <li class="portfolio-item">
               <article class="product">
                 <div class="project">
-                  <img
-                    class="product-img"
-                    src="../img/portfolio/labeltag.jpg"
-                    alt="Проєктлаб"
-                  />
+                  <picture>
+                    <!-- Мобільна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/labeltag-mobile.jpg    1x,
+                        ../img/portfolio/labeltag-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                      sizes="450px"
+                    />
+
+                    <!-- Планшетна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/labeltag-tablet.jpg    1x,
+                        ../img/portfolio/labeltag-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                      sizes="354px"
+                    />
+
+                    <!-- Десктопна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/labeltag-desctop.jpg    1x,
+                        ../img/portfolio/labeltag-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                      sizes="370px"
+                    />
+
+                    <img
+                      class="product-img"
+                      src="../img/portfolio/labeltag.jpg"
+                      alt="Проєктлаб"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-text-overlay">
@@ -276,14 +604,52 @@
                 <p class="product-category">Маркетинг</p>
               </article>
             </li>
-            <li data-aos="fade-left" class="portfolio-item">
+            <li class="portfolio-item">
               <article class="product">
                 <div class="project">
-                  <img
-                    class="product-img"
-                    src="../img/portfolio/laptop.jpg"
-                    alt="ноутбук"
-                  />
+                  <picture>
+                    <!-- Мобільна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/laptop-mobile.jpg    1x,
+                        ../img/portfolio/laptop-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                      sizes="450px"
+                    />
+
+                    <!-- Планшетна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/laptop-tablet.jpg    1x,
+                        ../img/portfolio/laptop-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1199px)"
+                      type="image/jpg"
+                      sizes="354px"
+                    />
+
+                    <!-- Десктопна версія -->
+
+                    <source
+                      srcset="
+                        ../img/portfolio/laptop-desctop.jpg    1x,
+                        ../img/portfolio/laptop-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                      sizes="370px"
+                    />
+
+                    <img
+                      class="product-img"
+                      src="../img/portfolio/laptop.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
 
                   <div class="project-overlay">
                     <p class="project-text-overlay">
@@ -371,8 +737,5 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

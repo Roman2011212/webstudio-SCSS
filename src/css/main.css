@@ -763,7 +763,7 @@ input[type=checkbox] {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1152,4 +1152,61 @@ input[type=checkbox] {
 
 .product-category {
   line-height: 1.8;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+  .project {
+    position: relative;
+    overflow: hidden;
+  }
+  .project-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #2196f3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-item:hover .project-overlay {
+    transform: translateY(0);
+  }
+  .project-text-overlay {
+    max-width: 322px;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    padding: 63px, 24px;
+  }
+  .portfolio-item {
+    color: #2196f3;
+  }
+  .portfolio-item {
+    background-color: #ffffff;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .product-name {
+    font-weight: 700;
+    font-size: 18;
+    line-height: 2;
+  }
+  .product-category {
+    line-height: 1.8;
+  }
 }
