@@ -7,7 +7,7 @@
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -63,8 +63,8 @@
   line-height: 1.8;
   @extend %subtitle;
 }
-@media (min-width: 1024px) {
-  .portfolio-list {
+@media (min-width: 1200px) {
+  .portfolio__list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;

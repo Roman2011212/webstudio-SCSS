@@ -3,7 +3,7 @@
   display: none;
 }
 
-.work-title {
+.work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -12,7 +12,7 @@
   justify-content: center;
   padding-bottom: 50px;
 }
-.work-list {
+.work__list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;

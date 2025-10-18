@@ -1,4 +1,4 @@
-.hero-container {
+.hero__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@
     background-image: url(../img/hero/hero\ img-mobile@2x.jpg);
   }
 }
-.hero-title {
+.hero__title {
   color: $color-header-bord;
   font-weight: 900;
   font-size: 26px;
@@ -34,7 +34,7 @@
   text-transform: uppercase;
   letter-spacing: 0, 06em;
 }
-.hero-button {
+.hero__button {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
